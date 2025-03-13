@@ -1,12 +1,14 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "test.js",
+  "main": "dist/server.js",
   "scripts": {
     "start": "node dist/index.js",
     "build": "tsc",
     "dev": "nodemon",
-    "seed": "ts-node src/seed.ts"
+    "seed": "ts-node src/seed.ts",
+    "migrate": "prisma migrate dev",
+    "generate": "prisma generate"
   },
   "keywords": [],
   "author": "",

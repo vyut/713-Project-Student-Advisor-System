@@ -1,6 +1,9 @@
 import express, { Request, Response } from 'express';
 import multer from 'multer';
 import cors from 'cors';
+import dotenv from 'dotenv';
+dotenv.config();
+
 
 import { PrismaClient } from '@prisma/client';
 
